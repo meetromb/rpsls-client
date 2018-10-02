@@ -1,0 +1,73 @@
+.HelpScreen {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.HelpScreen.active {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.HelpScreen-Title {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.HelpScreen-Description {
+    padding-top: 70px;
+    width: calc(100% - 60px);
+    padding: 0 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.HelpScreen-Block {
+    padding-bottom: 20px;
+}
+
+.HelpScreen-Block h3 {
+    color: #b29ff4;
+    font-size: 24px;
+}
+
+.HelpScreen-Block p, .HelpScreen-Block ol {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.HelpScreen-Close {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.HelpScreen-Close:hover {
+    font-size: 105px;
+}
+
+.HelpScreen-Close span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}

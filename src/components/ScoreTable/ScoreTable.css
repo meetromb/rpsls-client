@@ -1,0 +1,35 @@
+.Score-Left {
+    position: absolute;
+    left: -200px;
+    text-align: left;
+    transition: left 0.5s ease-in-out;
+}
+
+.Score-Left.animated {
+    left: 0;
+}
+
+.Score-Right {
+    position: absolute;
+    right: -200px;
+    text-align: right;
+    transition: right 0.5s ease-in-out;
+}
+
+.Score-Right.animated {
+    right: 0;
+}
+
+.Score-Title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Score-Number {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 30px;
+}

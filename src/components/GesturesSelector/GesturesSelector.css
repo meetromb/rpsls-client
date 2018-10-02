@@ -1,0 +1,155 @@
+.GesturesSelector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GesturesSelector-Title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.GesturesSelector-List {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Gesture {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.Gesture:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-size: 60% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.Gesture:hover:before {
+    height: 110%;
+    width: 110%;
+}
+
+.Gesture:hover .Gesture-Description {
+    display: block;
+}
+
+.Gesture_Type1:before {
+    background-color: #691d4a;
+    background-image: url('../../assets/rock.png');
+}
+
+.Gesture_Type2:before {
+    background-color: #465578;
+    background-image: url('../../assets/paper.png');
+}
+
+.Gesture_Type3:before {
+    background-color: #de4a63;
+    background-image: url('../../assets/scissors.png');
+}
+
+.Gesture_Type4:before {
+    background-color: #9df981;
+    background-image: url('../../assets/spock.png');
+}
+
+.Gesture_Type5:before {
+    background-color: #9b83fc;
+    background-image: url('../../assets/lizard.png');
+}
+
+.GesturesSelector-Item.hidden {
+    display: none;
+}
+
+.GesturesSelector-Item.active .Gesture {
+    border: 8px solid #fff;
+}
+
+.GestureSelector-Separator {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    padding: 0 40px;
+}
+
+.Gesture-Description {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 7px;
+    padding: 0px 20px;
+    max-width: 200px;
+    width: 200px;
+    display: none;
+}
+
+.Gesture-Description h3 {
+    margin-bottom: 15px;
+}
+
+.Gesture-Description p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.Gesture-Description ul {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 17px;
+    font-size: 14px;
+}
+
+.Gesture-Description li {
+    line-height: 18px;
+}
+
+.UnknownGesture {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0 15px;
+    border: 7.5px solid #fff;
+}
+
+.UnknownGesture:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('../../assets/pattern.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.UnknownGesture span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+}

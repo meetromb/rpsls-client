@@ -1,0 +1,38 @@
+.GameFinish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GameFinish-Result {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.GameFinish-Repeat {
+    display: inline-block;
+    padding: 18px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #000;
+    background: #f4ce42;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-top: 30px;
+}
+
+.GameFinish-Repeat.active {
+    border: 2px solid #0c0a03;
+}
+
+.GameFinish-Repeat:hover {
+    border: 2px solid #0c0a03;
+}
+
+.GameFinish-ReadyMsg {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}

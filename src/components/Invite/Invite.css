@@ -1,0 +1,34 @@
+.Invite-Title {
+    color: #fff;
+    font-size: 32px;
+}
+
+.Invite-Title span {
+    color: #ffc928;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.Invite-Subtitle {
+    color: #191919;
+    font-size: 16px;
+}
+
+.Invite-Input {
+    width: 320px;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255,255,255,0.85);
+}
+
+.Invite-Input:hover {
+    background-color: #fff;
+}

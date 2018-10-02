@@ -1,0 +1,40 @@
+.Header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.Header-Title.Big {
+    display: block;
+}
+
+.Header-Title.Small {
+    display: none;
+}
+
+.Header-Title {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #a0d0f8
+}
+
+.Header-Subtitle {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media only screen and (max-width : 1200px) {
+    .Header-Title.Big {
+        display: none;
+    }
+
+    .Header-Title.Small {
+        display: block;
+    }
+}

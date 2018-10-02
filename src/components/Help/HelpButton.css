@@ -1,0 +1,50 @@
+.HelpButton {
+    position: relative;
+    cursor: pointer;
+}
+
+.HelpButton:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    transition: width 0.15s ease-in-out, height 0.15s ease-in-out;
+}
+
+.HelpButton span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff
+}
+
+.HelpButton span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.2);
+    transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+
+.HelpButton:hover:before {
+    height: 85px;
+    width: 85px;
+}
+
+.HelpButton:hover span:before {
+    height: 60px;
+    width: 60px;
+}
